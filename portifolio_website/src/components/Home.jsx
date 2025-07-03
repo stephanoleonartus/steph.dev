@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Facebook, Twitter, Instagram, Mail, Linkedin, Phone, Eye } from 'lucid-react';
+import { Facebook, Twitter, Instagram, Mail, Linkedin, Phone, Eye } from 'lucide-react';
 
 const HomePage = () => (
     <div className="min-h-screen bg-purple-900 relative">
@@ -7,6 +7,7 @@ const HomePage = () => (
         {/* Main Hero Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-8">
+
             {/* Main intro box */}
             <div className="bg-gray-200 rounded-lg p-8 shadow-lg">
               <h1 className="text-4xl font-bold text-gray-800 mb-6 leading-tight">
@@ -25,7 +26,7 @@ const HomePage = () => (
               <div className="bg-gray-200 rounded-lg p-6 shadow-lg">
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Machine Learning</h3>
                 <p className="text-gray-600 font-medium">and</p>
-                <p className="text-gray-800 font-bold">Artificial Intelligence</p>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Artificial Intelligence</h3>
               </div>
               
               <div className="bg-gray-200 rounded-lg p-6 shadow-lg">
@@ -34,14 +35,7 @@ const HomePage = () => (
             </div>
           </div>
           
-          {/* Profile Image */}
-          <div className="flex justify-center">
-            <div className="bg-gray-300 rounded-lg p-4 shadow-lg">
-              <div className="w-80 h-96 bg-gray-400 rounded-lg flex items-center justify-center">
-                <span className="text-gray-600 font-medium">Profile Image</span>
-              </div>
-            </div>
-          </div>
+          
         </div>
         
         {/* Services Section */}
@@ -58,7 +52,7 @@ const HomePage = () => (
           </div>
         </div>
         
-        {/* About Section */}
+        {/* About Section  link */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="bg-gray-300 rounded-lg p-4 shadow-lg">
             <div className="w-full h-64 bg-gray-400 rounded-lg flex items-center justify-center">
