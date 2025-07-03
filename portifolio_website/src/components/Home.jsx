@@ -2,35 +2,35 @@ import React, { useState } from "react";
 import { Facebook, Twitter, Instagram, Mail, Linkedin, Phone, Eye } from 'lucide-react';
 
 const HomePage = () => (
-    <div className="min-h-screen bg-purple-900 relative">
-      <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="">
+      <div className="">
         {/* Main Hero Section */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="space-y-8">
+        <div className>
+          <div className="">
 
-            {/* Main intro box */}
-            <div className="bg-gray-200 rounded-lg p-8 shadow-lg">
-              <h1 className="text-4xl font-bold text-gray-800 mb-6 leading-tight">
+            {/* Main intro  of shedrack siame box */}
+            <div className="">
+              <h1 className="">
                 Hello, I'm<br />
-                <span className="text-purple-900">Shedrack Siame</span> An<br />
+                <span className="">Shedrack Siame</span> An<br />
                 Computer Engineer
               </h1>
-              <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded transition-colors duration-300 flex items-center gap-2 font-medium">
-                <Eye className="w-4 h-4" />
+              <button className="">
+                <Eye className="" />
                 Browse All Project
               </button>
             </div>
             
-            {/* Skills boxes */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-200 rounded-lg p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-gray-800 mb-2">Machine Learning</h3>
-                <p className="text-gray-600 font-medium">and</p>
-                <h3 className="text-lg font-bold text-gray-800 mb-2">Artificial Intelligence</h3>
+            {/* Skills boxes displayed */}
+            <div className="">
+              <div className="">
+                <h3 className="">Machine Learning</h3>
+                <p className="">and</p>
+                <h3 className="">Artificial Intelligence</h3>
               </div>
               
-              <div className="bg-gray-200 rounded-lg p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-gray-800">Data Analytics</h3>
+              <div className="">
+                <h3 className="">Data Analytics</h3>
               </div>
             </div>
           </div>
@@ -39,30 +39,30 @@ const HomePage = () => (
         </div>
         
         {/* Services Section */}
-        <div className="mb-16">
-          <div className="bg-gray-200 rounded-lg p-8 shadow-lg text-center">
-            <p className="text-red-600 font-medium mb-2">What I can Offer</p>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+        <div className="">
+          <div className="">
+            <p className="">What I can Offer</p>
+            <h2 className="">
               Which Service I<br />
               Can Provide For You
             </h2>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded transition-colors duration-300 font-medium">
+            <button className="">
               Explore All Services
             </button>
           </div>
         </div>
         
         {/* About Section  link */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="bg-gray-300 rounded-lg p-4 shadow-lg">
-            <div className="w-full h-64 bg-gray-400 rounded-lg flex items-center justify-center">
-              <span className="text-gray-600 font-medium">About Image</span>
+        <div className="">
+          <div className="">
+            <div className="">
+              <span className="">About Image</span>
             </div>
           </div>
           
-          <div className="text-white">
-            <p className="text-red-400 font-medium mb-4">About me</p>
-            <h3 className="text-2xl font-bold leading-relaxed">
+          <div className="">
+            <p className="">About me</p>
+            <h3 className="">
               My values is Integrity,<br />
               Empathy and Time Management.
             </h3>
