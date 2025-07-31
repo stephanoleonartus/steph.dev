@@ -3,7 +3,7 @@ import { Brain, BarChart, Monitor, Smartphone, Database, Code } from 'lucide-rea
 
 // Services Page Component
 const Services = () => (
-  <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
+  <div className="min-h-screen">
     <div className="max-w-7xl mx-auto px-4 py-16">
       <div className="text-center mb-16">
         <h1 className="text-white text-4xl font-bold mb-4">My Services</h1>
@@ -19,8 +19,8 @@ const Services = () => (
           { icon: Database, title: "Data Management", desc: "Database design and optimization" },
           { icon: Code, title: "Consulting", desc: "Technical consulting and architecture" }
         ].map((service, index) => (
-          <div key={index} className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-blue-500 transition-colors duration-300">
-            <service.icon className="text-blue-400 mb-4" size={40} />
+          <div key={index} className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-brand-blue transition-colors duration-300">
+            <service.icon className="text-brand-blue mb-4" size={40} />
             <h3 className="text-white text-xl font-bold mb-2">{service.title}</h3>
             <p className="text-gray-400">{service.desc}</p>
           </div>
