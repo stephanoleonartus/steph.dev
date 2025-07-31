@@ -4,7 +4,12 @@ import React from 'react';
 const Navigation = ({ currentPage, setCurrentPage }) => (
   <nav className="bg-white text-gray-800 p-4 sticky top-0 z-40 shadow-md">
     <div className="max-w-7xl mx-auto flex justify-between items-center">
-      <div className="text-2xl font-bold text-brand-blue">Shedrack Siame</div>
+      <button
+        onClick={() => setCurrentPage('home')}
+        className="text-2xl font-bold text-brand-blue cursor-pointer focus:outline-none"
+      >
+        Shedrack Siame
+      </button>
       <div className="hidden md:flex space-x-8">
         {[
           { name: 'Home', key: 'home' },
