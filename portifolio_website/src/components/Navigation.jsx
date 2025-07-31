@@ -2,9 +2,9 @@ import React from 'react';
 
 // Navigation Component
 const Navigation = ({ currentPage, setCurrentPage }) => (
-  <nav className="bg-gray-900 text-white p-4 sticky top-0 z-40">
+  <nav className="bg-white text-gray-800 p-4 sticky top-0 z-40 shadow-md">
     <div className="max-w-7xl mx-auto flex justify-between items-center">
-      <div className="text-2xl font-bold text-blue-400">Shedrack Siame</div>
+      <div className="text-2xl font-bold text-brand-blue">Shedrack Siame</div>
       <div className="hidden md:flex space-x-8">
         {[
           { name: 'Home', key: 'home' },
@@ -16,15 +16,15 @@ const Navigation = ({ currentPage, setCurrentPage }) => (
           <button
             key={item.key}
             onClick={() => setCurrentPage(item.key)}
-            className={`hover:text-blue-400 transition-colors duration-300 ${
-              currentPage === item.key ? 'text-blue-400 underline' : ''
+            className={`hover:text-brand-blue transition-colors duration-300 ${
+              currentPage === item.key ? 'text-brand-blue underline' : ''
             }`}
           >
             {item.name}
           </button>
         ))}
       </div>
-      <button className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition-colors duration-300">
+      <button className="bg-brand-blue hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-300">
         Download CV
       </button>
     </div>

@@ -12,7 +12,7 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-dark-blue text-white">
       <SocialSidebar />
       <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
       
