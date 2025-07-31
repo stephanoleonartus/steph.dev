@@ -1,3 +1,5 @@
+import React from 'react';
+
 // Navigation Component
 const Navigation = ({ currentPage, setCurrentPage }) => (
   <nav className="bg-gray-900 text-white p-4 sticky top-0 z-40">
@@ -29,3 +31,4 @@ const Navigation = ({ currentPage, setCurrentPage }) => (
   </nav>
 );
 
+export default Navigation;

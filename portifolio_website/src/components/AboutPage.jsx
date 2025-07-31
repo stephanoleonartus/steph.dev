@@ -1,3 +1,6 @@
+import React from 'react';
+import { Brain, BarChart, Code, Monitor, Facebook, Twitter, Instagram, Mail, Linkedin, Phone } from 'lucide-react';
+
 // About Page Component
 const AboutPage = ({ setCurrentPage }) => (
   <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
@@ -62,3 +65,5 @@ const AboutPage = ({ setCurrentPage }) => (
     </footer>
   </div>
 );
+
+export default AboutPage;
