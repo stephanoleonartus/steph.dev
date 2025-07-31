@@ -1,23 +1,11 @@
 import React, { useState } from 'react';
-import { Facebook, Twitter, Instagram, Mail, Linkedin, Phone, Eye, Award, Code, Database, Brain, BarChart, Monitor, Smartphone } from 'lucide-react';
-
-// Social Sidebar Component
-const SocialSidebar = () => (
-  <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 bg-gray-900 rounded-r-xl p-3 shadow-lg">
-    <div className="flex flex-col space-y-4">
-      {[Facebook, Twitter, Instagram, Mail, Linkedin, Phone].map((Icon, index) => (
-        <button key={index} className="text-white hover:text-blue-400 transition-colors duration-300">
-          <Icon size={20} />
-        </button>
-      ))}
-    </div>
-  </div>
-);
-
-
-
-
-
+import SocialSidebar from './components/SocialSidebar';
+import Navigation from './components/Navigation';
+import HomePage from './components/Home';
+import AboutPage from './components/AboutPage';
+import Project from './components/Project';
+import Services from './components/Services';
+import Certification from './components/Certification';
 
 // Main App Component
 const App = () => {

@@ -1,3 +1,6 @@
+import React from 'react';
+import { Award } from 'lucide-react';
+
 // Certification Page Component
 const Certification = () => (
   <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
@@ -21,3 +24,5 @@ const Certification = () => (
     </div>
   </div>
 );
+
+export default Certification;

@@ -1,3 +1,6 @@
+import React from 'react';
+import { Brain, BarChart, Monitor, Smartphone, Database, Code } from 'lucide-react';
+
 // Services Page Component
 const Services = () => (
   <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
@@ -26,3 +29,5 @@ const Services = () => (
     </div>
   </div>
 );
+
+export default Services;

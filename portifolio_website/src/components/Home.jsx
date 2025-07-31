@@ -1,3 +1,6 @@
+import React from 'react';
+import { Eye, Brain, BarChart } from 'lucide-react';
+
 // Home Page Component
 const HomePage = ({ setCurrentPage }) => (
   <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
@@ -73,3 +76,5 @@ const HomePage = ({ setCurrentPage }) => (
     </div>
   </div>
 );
+
+export default HomePage;

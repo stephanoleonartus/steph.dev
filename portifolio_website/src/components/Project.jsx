@@ -1,3 +1,6 @@
+import React from 'react';
+import { Code } from 'lucide-react';
+
 // Project Page Component
 const Project = () => (
   <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
@@ -24,3 +27,5 @@ const Project = () => (
     </div>
   </div>
 );
+
+export default Project;
