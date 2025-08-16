@@ -1,13 +1,21 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import Globe from 'r3f-globe';
 
 const GlobeComponent = () => {
   const globeRef = useRef();
 
+  useEffect(() => {
+    if (globeRef.current) {
+      console.log(globeRef.current);
+    }
+  }, [globeRef.current]);
+
   useFrame(() => {
     if (globeRef.current) {
-      globeRef.current.rotation.y += 0.001;
+      // Access the globe object to rotate it
+      const globe = globeRef.current;
+      globe.rotation.y += 0.001;
     }
   });
 
