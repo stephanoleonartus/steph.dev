@@ -1,5 +1,6 @@
 import React from 'react';
 import { Eye, Brain, BarChart } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 
 // Home Page Component
 const HomePage = ({ setCurrentPage }) => (
@@ -11,9 +12,17 @@ const HomePage = ({ setCurrentPage }) => (
           {/* Main intro */}
           <div className="mb-8">
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8">
-              Hello, I'm<br />
-              <span className="text-blue-800">Shedrack Siame</span><br />
-              A Computer Engineer
+              <TypeAnimation
+                sequence={[
+                  "Hello, I'm\nShedrack Siame\nA Computer Engineer",
+                  1000,
+                  '',
+                ]}
+                wrapper="span"
+                cursor={true}
+                repeat={Infinity}
+                style={{ whiteSpace: 'pre-line' }}
+              />
             </h1>
             <button
               onClick={() => setCurrentPage('project')}
