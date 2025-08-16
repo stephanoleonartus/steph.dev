@@ -6,7 +6,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => (
     <div className="max-w-7xl mx-auto flex justify-between items-center">
       <button
         onClick={() => setCurrentPage('home')}
-        className="text-2xl font-bold text-brand-blue cursor-pointer focus:outline-none"
+        className="text-2xl font-bold text-blue-800 cursor-pointer focus:outline-none"
       >
         Shedrack Siame
       </button>
@@ -21,15 +21,15 @@ const Navigation = ({ currentPage, setCurrentPage }) => (
           <button
             key={item.key}
             onClick={() => setCurrentPage(item.key)}
-            className={`hover:text-brand-blue transition-colors duration-300 ${
-              currentPage === item.key ? 'text-brand-blue underline' : ''
+            className={`hover:text-blue-800 transition-colors duration-300 ${
+              currentPage === item.key ? 'text-blue-800 underline' : ''
             }`}
           >
             {item.name}
           </button>
         ))}
       </div>
-      <button className="bg-brand-blue hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-300">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-300">
         Download CV
       </button>
     </div>
