@@ -10,8 +10,9 @@ const Project = () => (
         <p className="text-black text-lg">Showcasing my work in AI, ML, and Data Analytics</p>
       </div>
       
+      {/*update the website project */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {[1, 2, 3, 4, 5, 6].map((project) => (
+        {[1, 2, 3, 4, 5, 6, 7].map((project) => (
           <div key={project} className="rounded-xl p-6 border border-gray-700 hover:border-blue-800 transition-colors duration-300">
             <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-8 mb-4">
               <Code className="text-black mx-auto" size={32} />

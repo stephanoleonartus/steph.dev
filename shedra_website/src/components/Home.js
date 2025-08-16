@@ -16,7 +16,7 @@ const HomePage = ({ setCurrentPage }) => (
               A Computer Engineer
             </h1>
             <button
-              onClick={() => setCurrentPage('project')}
+              onClick={() => setCurrentPage('projects')}
               className="bg-blue-500 hover:bg-blue-700 px-8 py-3 rounded-lg flex items-center gap-2 transition-colors duration-300"
             >
               <Eye size={20} />
@@ -31,12 +31,12 @@ const HomePage = ({ setCurrentPage }) => (
             <Brain className="text-blue-800 mb-4" size={32} />
             <h3 className="text-black text-xl font-bold mb-2">Machine Learning</h3>
             <p className="text-black">and</p>
-            <h3 className="text-black text-xl font-bold">Artificial Intelligence</h3>
+            <h3 className="text-black text-xl font-bold">Artificial Intelligence Engineer</h3>
           </div>
           
           <div className="p-6 rounded-xl border border-gray-700 hover:border-blue-800 transition-colors duration-300">
             <BarChart className="text-blue-800 mb-4" size={32} />
-            <h3 className="text-black text-xl font-bold">Data Analytics</h3>
+            <h3 className="text-black text-xl font-bold">Data Analytics Expert</h3>
           </div>
         </div>
       </div>
