@@ -14,7 +14,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => (
         {[
           { name: 'Home', key: 'home' },
           { name: 'About', key: 'about' },
-          { name: 'Project', key: 'project' },
+          { name: 'Projects', key: 'projects' },
           { name: 'Services', key: 'services' },
           { name: 'Certification & Reward', key: 'certification' }
         ].map((item) => (

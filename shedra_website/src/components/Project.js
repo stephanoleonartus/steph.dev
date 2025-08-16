@@ -68,7 +68,7 @@ const Project = () => {
           <h1 className="text-black text-4xl font-bold mb-4">My Projects</h1>
           <p className="text-black text-lg">Showcasing my work in AI, ML, and Data Analytics</p>
         </div>
-
+        
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="rounded-xl p-6 border border-gray-700 hover:border-blue-800 transition-colors duration-300">

@@ -18,7 +18,7 @@ const App = () => {
       
       {currentPage === 'home' && <HomePage setCurrentPage={setCurrentPage} />}
       {currentPage === 'about' && <AboutPage setCurrentPage={setCurrentPage} />}
-      {currentPage === 'project' && <Project />}
+      {currentPage === 'projects' && <Project />}
       {currentPage === 'services' && <Services />}
       {currentPage === 'certification' && <Certification />}
     </div>
