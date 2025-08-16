@@ -54,7 +54,7 @@ const HomePage = ({ setCurrentPage }) => {
               </button>
             </div>
           </div>
-
+          
           {/* Right side content */}
           <div className="flex flex-col gap-8">
             {/* Globe */}
@@ -70,7 +70,7 @@ const HomePage = ({ setCurrentPage }) => {
                 <p className="text-black">and</p>
                 <h3 className="text-black text-xl font-bold">Artificial Intelligence</h3>
               </div>
-
+              
               <div className="p-6 rounded-xl border border-gray-700 hover:border-blue-800 transition-colors duration-300">
                 <BarChart className="text-blue-800 mb-4" size={32} />
                 <h3 className="text-black text-xl font-bold">Data Analytics</h3>
@@ -78,7 +78,7 @@ const HomePage = ({ setCurrentPage }) => {
             </div>
           </div>
         </div>
-
+        
         {/* Services Section */}
         <div className="text-center mb-20">
           <div className="text-black">
