@@ -1,32 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Eye, Brain, BarChart } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 
 // Home Page Component
-const HomePage = ({ setCurrentPage }) => (
-  <div className="min-h-screen">
-    <div className="max-w-7xl mx-auto px-4 py-16">
-      {/* Main Hero Section */}
-      <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-        <div className="text-black">
-          {/* Main intro */}
-          <div className="mb-8">
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8">
-              <TypeAnimation
-                sequence={[
-                  "Hello, I'm\nShedrack Siame\nA Computer Engineer",
-                  1000,
-                  '',
-                ]}
-                wrapper="span"
-                cursor={true}
-                repeat={Infinity}
-                style={{ whiteSpace: 'pre-line' }}
-              />
-            </h1>
-            <button
-              onClick={() => setCurrentPage('project')}
-              className="bg-blue-500 hover:bg-blue-700 px-8 py-3 rounded-lg flex items-center gap-2 transition-colors duration-300"
+const HomePage = ({ setCurrentPage }) => {
+  const [textColor, setTextColor] = useState('black');
+
+  return (
+    <div className="min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        {/* Main Hero Section */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="text-black">
+            {/* Main intro */}
+            <div className="mb-8">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8" style={{ color: textColor }}>
+                <TypeAnimation
+                  sequence={[
+                    "Hello, I'm\n",
+                    500,
+                    () => setTextColor('blue'),
+                    "Hello, I'm\nShedrack Siame",
+                    500,
+                    () => setTextColor('black'),
+                    "Hello, I'm\nShedrack Siame\nA Computer Engineer",
+                    1000,
+                    '',
+                  ]}
+                  speed={70}
+                  wrapper="span"
+                  cursor={true}
+                  repeat={Infinity}
+                  style={{ whiteSpace: 'pre-line' }}
+                />
+              </h1>
+              <button
+                onClick={() => setCurrentPage('project')}
+                className="bg-blue-500 hover:bg-blue-700 px-8 py-3 rounded-lg flex items-center gap-2 transition-colors duration-300"
             >
               <Eye size={20} />
               Browse All Projects
