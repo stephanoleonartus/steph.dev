@@ -1,24 +1,23 @@
-import React, { useRef, useEffect } from 'react';
-import { Canvas } from '@react-three/fiber';
-import Globe from 'r3f-globe';
+import React, { useRef } from 'react';
+import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import { TextureLoader } from 'three';
 import { OrbitControls } from '@react-three/drei';
 
 const GlobeComponent = () => {
-  const globeRef = useRef();
+  const meshRef = useRef();
+  const texture = useLoader(TextureLoader, '//unpkg.com/three-globe/example/img/earth-dark.jpg');
 
-  useEffect(() => {
-    if (globeRef.current) {
-      globeRef.current.controls().autoRotate = true;
-      globeRef.current.controls().autoRotateSpeed = 0.2;
+  useFrame(() => {
+    if (meshRef.current) {
+      meshRef.current.rotation.y += 0.001;
     }
-  }, [globeRef]);
+  });
 
   return (
-    <Globe
-      ref={globeRef}
-      globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
-      backgroundColor="rgba(0,0,0,0)"
-    />
+    <mesh ref={meshRef}>
+      <sphereGeometry args={[2, 32, 32]} />
+      <meshStandardMaterial map={texture} />
+    </mesh>
   );
 };
 
@@ -28,7 +27,7 @@ const GlobeCanvas = () => {
       <ambientLight intensity={0.5} />
       <directionalLight position={[0, 10, 5]} intensity={1} />
       <GlobeComponent />
-      <OrbitControls />
+      <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.4} />
     </Canvas>
   );
 };
