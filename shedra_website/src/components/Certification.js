@@ -49,35 +49,37 @@ const Certification = () => {
           <p className="text-black text-lg">Professional achievements and recognitions</p>
         </div>
 
-        {/* Certifications Section */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Certifications</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certifications.map((cert) => (
-              <div key={cert.id} className="relative rounded-xl p-6 border border-gray-700 hover:border-blue-800 transition-colors duration-300">
-                <img src={cert.image} alt={cert.title} className="absolute top-2 right-2 w-12 h-12" />
-                <div className="text-left mb-4">
-                  <h3 className="text-black text-xl font-bold">{cert.title}</h3>
+        <div className="grid md:grid-cols-2 gap-16">
+          {/* Certifications Section */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold mb-8">Certifications</h2>
+            <div className="grid gap-8">
+              {certifications.map((cert) => (
+                <div key={cert.id} className="relative rounded-xl p-6 border border-gray-700 hover:border-blue-800 transition-colors duration-300">
+                  <img src={cert.image} alt={cert.title} className="absolute top-2 right-2 w-12 h-12" />
+                  <div className="text-left mb-4">
+                    <h3 className="text-black text-xl font-bold">{cert.title}</h3>
+                  </div>
+                  <p className="text-black text-left">{cert.issuer} - {cert.date}</p>
                 </div>
-                <p className="text-black text-left">{cert.issuer} - {cert.date}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Awards Section */}
-        <div>
-          <h2 className="text-2xl font-bold mb-8">Awards</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {awards.map((award) => (
-              <div key={award.id} className="relative rounded-xl p-6 border border-gray-700 hover:border-blue-800 transition-colors duration-300">
-                <img src={award.image} alt={award.title} className="absolute top-2 right-2 w-12 h-12" />
-                <div className="text-left mb-4">
-                  <h3 className="text-black text-xl font-bold">{award.title}</h3>
+          {/* Awards Section */}
+          <div>
+            <h2 className="text-2xl font-bold mb-8">Awards</h2>
+            <div className="grid gap-8">
+              {awards.map((award) => (
+                <div key={award.id} className="relative rounded-xl p-6 border border-gray-700 hover:border-blue-800 transition-colors duration-300">
+                  <img src={award.image} alt={award.title} className="absolute top-2 right-2 w-12 h-12" />
+                  <div className="text-left mb-4">
+                    <h3 className="text-black text-xl font-bold">{award.title}</h3>
+                  </div>
+                  <p className="text-black text-left">{award.issuer} - {award.date}</p>
                 </div>
-                <p className="text-black text-left">{award.issuer} - {award.date}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
