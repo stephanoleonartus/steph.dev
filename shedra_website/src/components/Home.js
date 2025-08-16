@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Eye, Brain, BarChart } from 'lucide-react';
-import { TypeAnimation } from 'react-type-animation';
+import Typewriter from 'typewriter-effect';
 
 // Home Page Component
 const HomePage = ({ setCurrentPage }) => {
-  const [textColor, setTextColor] = useState('black');
+  const [animationDone, setAnimationDone] = useState(sessionStorage.getItem('animationDone') === 'true');
+
+  useEffect(() => {
+    if (!animationDone) {
+      sessionStorage.setItem('animationDone', 'true');
+    }
+  }, [animationDone]);
 
   return (
     <div className="min-h-screen">
@@ -14,33 +20,38 @@ const HomePage = ({ setCurrentPage }) => {
           <div className="text-black">
             {/* Main intro */}
             <div className="mb-8">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8" style={{ color: textColor }}>
-                <TypeAnimation
-                  sequence={[
-                    "Hello, I'm\n",
-                    500,
-                    () => setTextColor('blue'),
-                    "Hello, I'm\nShedrack Siame",
-                    500,
-                    () => setTextColor('black'),
-                    "Hello, I'm\nShedrack Siame\nA Computer Engineer",
-                    1000,
-                    '',
-                  ]}
-                  speed={70}
-                  wrapper="span"
-                  cursor={true}
-                  repeat={Infinity}
-                  style={{ whiteSpace: 'pre-line' }}
-                />
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8">
+                {animationDone ? (
+                  <>
+                    Hello, I'm<br />
+                    <span className="text-blue-800">Shedrack Siame</span><br />
+                    A Computer Engineer
+                  </>
+                ) : (
+                  <Typewriter
+                    onInit={(typewriter) => {
+                      typewriter
+                        .typeString("Hello, I'm")
+                        .typeString('<br/>')
+                        .typeString('<span style="color: blue;">Shedrack Siame</span>')
+                        .typeString('<br/>')
+                        .typeString('A Computer Engineer')
+                        .start();
+                    }}
+                    options={{
+                      delay: 70,
+                    }}
+                  />
+                )}
               </h1>
               <button
                 onClick={() => setCurrentPage('project')}
                 className="bg-blue-500 hover:bg-blue-700 px-8 py-3 rounded-lg flex items-center gap-2 transition-colors duration-300"
-            >
-              <Eye size={20} />
-              Browse All Projects
-            </button>
+              >
+                <Eye size={20} />
+                Browse All Projects
+              </button>
+            </div>
           </div>
         </div>
         
