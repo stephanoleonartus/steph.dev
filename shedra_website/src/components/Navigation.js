@@ -14,7 +14,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => (
         {[
           { name: 'Home', key: 'home' },
           { name: 'About', key: 'about' },
-          { name: 'Projects', key: 'projects' },
+          { name: 'Project', key: 'project' },
           { name: 'Services', key: 'services' },
           { name: 'Certification & Reward', key: 'certification' }
         ].map((item) => (
@@ -29,9 +29,9 @@ const Navigation = ({ currentPage, setCurrentPage }) => (
           </button>
         ))}
       </div>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-300">
+      <a href="/assets/cv.txt" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-300">
         Download CV
-      </button>
+      </a>
     </div>
   </nav>
 );
