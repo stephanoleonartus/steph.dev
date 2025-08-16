@@ -40,11 +40,44 @@ const AboutPage = ({ setCurrentPage }) => (
       {/* Experiences Section */}
       <div className="mb-16">
         <h2 className="text-black text-3xl font-bold mb-8 text-center">Experience</h2>
-        <div className="p-8 rounded-xl border border-gray-700">
-          <div className="text-center text-black">
-            <Monitor size={48} className="mx-auto mb-4 text-blue-800" />
-            <p>Experience details coming soon...</p>
-          </div>
+        <div className="space-y-8">
+          {[
+            {
+              id: 1,
+              jobTitle: 'Senior Software Engineer',
+              company: 'Tech Solutions Inc.',
+              duration: '2022 - Present',
+              responsibilities: [
+                'Led the development of a new client-facing web application.',
+                'Mentored junior developers and conducted code reviews.',
+                'Improved application performance by 20%.',
+              ],
+            },
+            {
+              id: 2,
+              jobTitle: 'Software Engineer',
+              company: 'Innovate LLC',
+              duration: '2020 - 2022',
+              responsibilities: [
+                'Developed and maintained features for a large-scale e-commerce platform.',
+                'Collaborated with cross-functional teams to define and ship new features.',
+                'Wrote and maintained unit and integration tests.',
+              ],
+            },
+          ].map((exp) => (
+            <div key={exp.id} className="p-6 rounded-xl border border-gray-700">
+              <div className="flex justify-between items-center mb-2">
+                <h3 className="text-xl font-bold">{exp.jobTitle}</h3>
+                <p className="text-sm text-gray-600">{exp.duration}</p>
+              </div>
+              <p className="text-lg mb-4">{exp.company}</p>
+              <ul className="list-disc list-inside space-y-1">
+                {exp.responsibilities.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>
