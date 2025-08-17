@@ -20,8 +20,8 @@ const HomePage = ({ setCurrentPage }) => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="text-black">
             {/* Main intro */}
-            <div className="mb-8">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8">
+          <div className="mb-8 text-center md:text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-8">
                 {animationDone ? (
                   <>
                     Hello, I'm<br />
@@ -47,7 +47,7 @@ const HomePage = ({ setCurrentPage }) => {
               </h1>
               <button
                 onClick={() => setCurrentPage('project')}
-                className="bg-blue-500 hover:bg-blue-700 px-8 py-3 rounded-lg flex items-center gap-2 transition-colors duration-300"
+              className="bg-blue-500 hover:bg-blue-700 px-8 py-3 rounded-lg flex items-center gap-2 transition-colors duration-300 mx-auto md:mx-0"
               >
                 <Eye size={20} />
                 Browse All Projects
@@ -58,7 +58,7 @@ const HomePage = ({ setCurrentPage }) => {
           {/* Right side content */}
           <div className="flex flex-col gap-8">
             {/* Globe */}
-            <div className="h-64">
+          <div className="h-64 md:h-auto">
               <GlobeCanvas />
             </div>
 
@@ -83,7 +83,7 @@ const HomePage = ({ setCurrentPage }) => {
         <div className="text-center mb-20">
           <div className="text-black">
             <p className="text-blue-800 text-lg mb-4">What I can Offer</p>
-            <h2 className="text-3xl lg:text-5xl font-bold mb-8">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8">
               Which Service I<br />
               Can Provide For You
             </h2>

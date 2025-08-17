@@ -65,7 +65,7 @@ const Project = () => {
     <div className="min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <h1 className="text-black text-4xl font-bold mb-4">My Projects</h1>
+          <h1 className="text-black text-3xl md:text-4xl font-bold mb-4">My Projects</h1>
           <p className="text-black text-lg">Showcasing my work in AI, ML, and Data Analytics</p>
         </div>
 

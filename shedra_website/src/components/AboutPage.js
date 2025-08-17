@@ -7,9 +7,9 @@ const AboutPage = ({ setCurrentPage }) => (
     <div className="max-w-7xl mx-auto px-4 py-16">
       {/* Header Section */}
       <div className="text-center mb-16">
-        <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-12 mb-8">
-          <div className="text-black text-8xl mb-4">👨‍💻</div>
-          <h1 className="text-black text-4xl font-bold">About Shedrack Siame</h1>
+        <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 md:p-12 mb-8">
+          <div className="text-black text-6xl md:text-8xl mb-4">👨‍💻</div>
+          <h1 className="text-black text-3xl md:text-4xl font-bold">About Shedrack Siame</h1>
         </div>
         <button
           onClick={() => setCurrentPage('certification')}
@@ -21,7 +21,7 @@ const AboutPage = ({ setCurrentPage }) => (
       
       {/* Skills Section */}
       <div className="mb-16">
-        <h2 className="text-black text-3xl font-bold mb-8 text-center">Skills</h2>
+        <h2 className="text-black text-2xl md:text-3xl font-bold mb-8 text-center">Skills</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { icon: Brain, title: "AI & Machine Learning", desc: "Advanced algorithms and neural networks" },
