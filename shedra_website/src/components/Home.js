@@ -98,9 +98,8 @@ const HomePage = ({ setCurrentPage }) => {
         
         {/* About Section Preview */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 text-center">
-            <div className="text-black text-6xl mb-4">👨‍💻</div>
-            <span className="text-black text-lg">About Image</span>
+          <div>
+            <img src="/assets/about-image.svg" alt="About" className="rounded-xl" />
           </div>
           
           <div className="text-black">
