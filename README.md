@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+# shedrack_website_portfolio
+The website that show the The biggest portfolio of Shedrack Siame
+
+>>>>>>> ef3c2efcac0a56e56707f18d6a960fec4c181f61
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<<<<<<< HEAD
+=======
+
+>>>>>>> ef3c2efcac0a56e56707f18d6a960fec4c181f61
