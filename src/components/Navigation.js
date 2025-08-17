@@ -44,6 +44,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
           </button>
         </div>
       </div>
+<<<<<<< HEAD:shedra_website/src/components/Navigation.js
       {isMenuOpen && (
         <div className="md:hidden mt-4">
           <div className="flex flex-col space-y-4">
@@ -70,5 +71,13 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
     </nav>
   );
 };
+=======
+      <a href="/assets/Data-Science-Live-PDF.pdf" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-300">
+        Download CV
+      </a>
+    </div>
+  </nav>
+);
+>>>>>>> main:src/components/Navigation.js
 
 export default Navigation;

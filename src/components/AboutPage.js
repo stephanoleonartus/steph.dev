@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, BarChart, Code, Monitor, Facebook, Twitter, Instagram, Mail, Linkedin, Phone } from 'lucide-react';
+import { Brain, BarChart, Code } from 'lucide-react';
 
 // About Page Component
 const AboutPage = ({ setCurrentPage }) => (
@@ -40,12 +40,12 @@ const AboutPage = ({ setCurrentPage }) => (
       {/* Experiences Section */}
       <div className="mb-16">
         <h2 className="text-black text-3xl font-bold mb-8 text-center">Experience</h2>
-        <div className="space-y-8">
+        <div className="text-black space-y-8">
           {[
             {
               id: 1,
-              jobTitle: 'Senior Software Engineer',
-              company: 'Tech Solutions Inc.',
+              jobTitle: 'CEO',
+              company: 'NOKTURN TECH CO.LTD',
               duration: '2022 - Present',
               responsibilities: [
                 'Led the development of a new client-facing web application.',
@@ -55,13 +55,11 @@ const AboutPage = ({ setCurrentPage }) => (
             },
             {
               id: 2,
-              jobTitle: 'Software Engineer',
-              company: 'Innovate LLC',
-              duration: '2020 - 2022',
+              jobTitle: 'AUDITOR',
+              company: 'PWC',
+              duration: '2023 - Present',
               responsibilities: [
-                'Developed and maintained features for a large-scale e-commerce platform.',
-                'Collaborated with cross-functional teams to define and ship new features.',
-                'Wrote and maintained unit and integration tests.',
+                'Auditing finacial document of the coperate.'
               ],
             },
           ].map((exp) => (

@@ -4,11 +4,11 @@ import React from 'react';
 const certificationsAndAwards = [
   {
     id: 1,
-    title: 'React Advanced Certified',
-    issuer: 'Scrimba',
+    title: 'University of Dar es Salaam Certified',
+    issuer: 'UDSM',
     date: '2023',
     category: 'Certification',
-    image: '/assets/cert1.svg',
+    image: '/assets/alxprofession_faundation.png',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const certificationsAndAwards = [
   },
   {
     id: 3,
-    title: 'Cloud Practitioner',
+    title: 'Cloud Practitioner                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ',
     issuer: 'Amazon Web Services',
     date: '2023',
     category: 'Certification',
