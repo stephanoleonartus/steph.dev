@@ -1,3 +1,0 @@
-This is a placeholder CV. Please replace this file with your actual CV.
-
-You can use a PDF, a Word document, or any other file type you prefer. Just make sure to update the link in `shedra_website/src/components/Navigation.js` if you change the file name or type.
