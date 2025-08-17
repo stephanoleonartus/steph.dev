@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, BarChart, Code, Monitor, Facebook, Twitter, Instagram, Mail, Linkedin, Phone } from 'lucide-react';
+import { Brain, BarChart, Code } from 'lucide-react';
 
 // About Page Component
 const AboutPage = ({ setCurrentPage }) => (

@@ -5,7 +5,7 @@ import GlobeCanvas from './Globe';
 
 // Home Page Component
 const HomePage = ({ setCurrentPage }) => {
-  const [animationDone, setAnimationDone] = useState(sessionStorage.getItem('animationDone') === 'true');
+  const [animationDone] = useState(sessionStorage.getItem('animationDone') === 'true');
 
   useEffect(() => {
     if (!animationDone) {
