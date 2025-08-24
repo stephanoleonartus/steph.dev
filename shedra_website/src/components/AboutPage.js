@@ -1,5 +1,14 @@
 import React from 'react';
 import { Brain, BarChart, Code } from 'lucide-react';
+import content from '../content.json';
+
+const { skills, experiences } = content;
+
+const iconMap = {
+  Brain,
+  BarChart,
+  Code,
+};
 
 // About Page Component
 const AboutPage = ({ setCurrentPage }) => (
@@ -23,46 +32,24 @@ const AboutPage = ({ setCurrentPage }) => (
       <div className="mb-16">
         <h2 className="text-black text-2xl md:text-3xl font-bold mb-8 text-center">Skills</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {[
-            { icon: Brain, title: "AI & Machine Learning", desc: "Advanced algorithms and neural networks" },
-            { icon: BarChart, title: "Data Analytics", desc: "Statistical analysis and visualization" },
-            { icon: Code, title: "Software Development", desc: "Full-stack web and mobile development" }
-          ].map((skill, index) => (
-            <div key={index} className="p-6 rounded-xl border border-gray-700 hover:border-blue-800 transition-colors duration-300">
-              <skill.icon className="text-blue-800 mb-4" size={40} />
-              <h3 className="text-black text-xl font-bold mb-2">{skill.title}</h3>
-              <p className="text-black">{skill.desc}</p>
-            </div>
-          ))}
+          {skills.map((skill, index) => {
+            const Icon = iconMap[skill.icon];
+            return (
+              <div key={index} className="p-6 rounded-xl border border-gray-700 hover:border-blue-800 transition-colors duration-300">
+                <Icon className="text-blue-800 mb-4" size={40} />
+                <h3 className="text-black text-xl font-bold mb-2">{skill.title}</h3>
+                <p className="text-black">{skill.desc}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
       
       {/* Experiences Section */}
       <div className="mb-16">
         <h2 className="text-black text-3xl font-bold mb-8 text-center">Experience</h2>
-        <div className="text-black space-y-8">
-          {[
-            {
-              id: 1,
-              jobTitle: 'CEO',
-              company: 'NOKTURN TECH CO.LTD',
-              duration: '2022 - Present',
-              responsibilities: [
-                'Led the development of a new client-facing web application.',
-                'Mentored junior developers and conducted code reviews.',
-                'Improved application performance by 20%.',
-              ],
-            },
-            {
-              id: 2,
-              jobTitle: 'AUDITOR',
-              company: 'PWC',
-              duration: '2023 - Present',
-              responsibilities: [
-                'Auditing finacial document of the coperate.'
-              ],
-            },
-          ].map((exp) => (
+        <div className="space-y-8">
+          {experiences.map((exp) => (
             <div key={exp.id} className="p-6 rounded-xl border border-gray-700">
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-xl font-bold">{exp.jobTitle}</h3>

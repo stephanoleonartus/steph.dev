@@ -1,0 +1,109 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project Alpha",
+      "description": "A brief description of Project Alpha.",
+      "explanation": "A more detailed explanation of Project Alpha, discussing the technologies used, the problems solved, and the outcomes.",
+      "image": "/assets/placeholder.svg"
+    },
+    {
+      "id": 2,
+      "title": "Project Beta",
+      "description": "A brief description of Project Beta.",
+      "explanation": "A more detailed explanation of Project Beta, discussing the technologies used, the problems solved, and the outcomes.",
+      "image": "/assets/placeholder.svg"
+    },
+    {
+      "id": 3,
+      "title": "Project Gamma",
+      "description": "A brief description of Project Gamma.",
+      "explanation": "A more detailed explanation of Project Gamma, discussing the technologies used, the problems solved, and the outcomes.",
+      "image": "/assets/placeholder.svg"
+    },
+    {
+      "id": 4,
+      "title": "Project Delta",
+      "description": "A brief description of Project Delta.",
+      "explanation": "A more detailed explanation of Project Delta, discussing the technologies used, the problems solved, and the outcomes.",
+      "image": "/assets/placeholder.svg"
+    },
+    {
+      "id": 5,
+      "title": "Project Epsilon",
+      "description": "A brief description of Project Epsilon.",
+      "explanation": "A more detailed explanation of Project Epsilon, discussing the technologies used, the problems solved, and the outcomes.",
+      "image": "/assets/placeholder.svg"
+    },
+    {
+      "id": 6,
+      "title": "Project Zeta",
+      "description": "A brief description of Project Zeta.",
+      "explanation": "A more detailed explanation of Project Zeta, discussing the technologies used, the problems solved, and the outcomes.",
+      "image": "/assets/placeholder.svg"
+    }
+  ],
+  "certificationsAndAwards": [
+    {
+      "id": 1,
+      "title": "React Advanced Certified",
+      "issuer": "Scrimba",
+      "date": "2023",
+      "category": "Certification",
+      "image": "/assets/cert1.svg"
+    },
+    {
+      "id": 2,
+      "title": "Top Performer Award",
+      "issuer": "Example Corp",
+      "date": "2022",
+      "category": "Award",
+      "image": "/assets/cert2.svg"
+    },
+    {
+      "id": 3,
+      "title": "Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "category": "Certification",
+      "image": "/assets/cert1.svg"
+    },
+    {
+      "id": 4,
+      "title": "Innovation Prize",
+      "issuer": "Tech Conference 2023",
+      "date": "2023",
+      "category": "Award",
+      "image": "/assets/cert2.svg"
+    }
+  ],
+  "skills": [
+    { "icon": "Brain", "title": "AI & Machine Learning", "desc": "Advanced algorithms and neural networks" },
+    { "icon": "BarChart", "title": "Data Analytics", "desc": "Statistical analysis and visualization" },
+    { "icon": "Code", "title": "Software Development", "desc": "Full-stack web and mobile development" }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "jobTitle": "Senior Software Engineer",
+      "company": "Tech Solutions Inc.",
+      "duration": "2022 - Present",
+      "responsibilities": [
+        "Led the development of a new client-facing web application.",
+        "Mentored junior developers and conducted code reviews.",
+        "Improved application performance by 20%."
+      ]
+    },
+    {
+      "id": 2,
+      "jobTitle": "Software Engineer",
+      "company": "Innovate LLC",
+      "duration": "2020 - 2022",
+      "responsibilities": [
+        "Developed and maintained features for a large-scale e-commerce platform.",
+        "Collaborated with cross-functional teams to define and ship new features.",
+        "Wrote and maintained unit and integration tests."
+      ]
+    }
+  ]
+}

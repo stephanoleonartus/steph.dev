@@ -5,7 +5,7 @@ import GlobeCanvas from './Globe';
 
 // Home Page Component
 const HomePage = ({ setCurrentPage }) => {
-  const [animationDone] = useState(sessionStorage.getItem('animationDone') === 'true');
+  const [animationDone, setAnimationDone] = useState(sessionStorage.getItem('animationDone') === 'true');
 
   useEffect(() => {
     if (!animationDone) {
@@ -99,7 +99,7 @@ const HomePage = ({ setCurrentPage }) => {
         {/* About Section Preview */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <img src="/assets/Imageconcept.jpg" alt="About" className="rounded-xl" />
+            <img src="/assets/about-image.svg" alt="About" className="rounded-xl" />
           </div>
           
           <div className="text-black">
