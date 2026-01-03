@@ -2,9 +2,9 @@
   "name": "shedra_website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://stephanoleonartus.github.io/shedrack_website_portfolio",
   "dependencies": {
     "@react-three/drei": "^10.7.2",
-
     "@react-three/fiber": "^9.3.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.7.0",
@@ -19,11 +19,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "CI=false react-scripts build",
     "start": "react-scripts start",
-    
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +45,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.12",
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "postcss-loader": "^8.1.1",
     "tailwindcss": "^4.1.12",
