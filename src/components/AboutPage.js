@@ -9,7 +9,7 @@ const AboutPage = ({ setCurrentPage }) => (
       <div className="text-center mb-16">
         <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 md:p-12 mb-8">
           <div className="text-black text-6xl md:text-8xl mb-4">👨‍💻</div>
-          <h1 className="text-black text-3xl md:text-4xl font-bold">About Shedrack Siame</h1>
+          <h1 className="text-black text-3xl md:text-4xl font-bold">About Stephs Dev</h1>
         </div>
         <button
           onClick={() => setCurrentPage('certification')}
@@ -44,7 +44,7 @@ const AboutPage = ({ setCurrentPage }) => (
           {[
             {
               id: 1,
-              jobTitle: 'CEO',
+              jobTitle: 'PM & CTO',
               company: 'NOKTURN TECH CO.LTD',
               duration: '2022 - Present',
               responsibilities: [
@@ -55,11 +55,11 @@ const AboutPage = ({ setCurrentPage }) => (
             },
             {
               id: 2,
-              jobTitle: 'AUDITOR',
-              company: 'PWC',
+              jobTitle: 'CEO',
+              company: 'Lishe Bora Company',
               duration: '2023 - Present',
               responsibilities: [
-                'Auditing finacial document of the coperate.'
+                'Lead in the development and foward look drive changes in the food industry and health of human.'
               ],
             },
           ].map((exp) => (

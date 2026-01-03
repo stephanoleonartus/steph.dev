@@ -25,8 +25,8 @@ const HomePage = ({ setCurrentPage }) => {
                 {animationDone ? (
                   <>
                     Hello, I'm<br />
-                    <span className="text-blue-800">Shedrack Siame</span><br />
-                    A Computer Engineer
+                    <span className="text-blue-800">Stephano Siame</span><br />
+                    A Computer Sceintist
                   </>
                 ) : (
                   <Typewriter
@@ -34,9 +34,9 @@ const HomePage = ({ setCurrentPage }) => {
                       typewriter
                         .typeString("Hello, I'm")
                         .typeString('<br/>')
-                        .typeString('<span style="color: blue;">Shedrack Siame</span>')
+                        .typeString('<span style="color: blue;">Stephano Siame</span>')
                         .typeString('<br/>')
-                        .typeString('A Computer Engineer')
+                        .typeString('A Computer Sceintist')
                         .start();
                     }}
                     options={{

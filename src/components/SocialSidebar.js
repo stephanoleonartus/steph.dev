@@ -7,8 +7,8 @@ const SocialSidebar = () => {
   const socialLinks = [
     { Icon: Facebook, href: '#', label: 'Facebook' },
     { Icon: Twitter, href: '#', label: 'Twitter' },
-    { Icon: Instagram, href: '#', label: 'Instagram' },
-    { Icon: Mail, href: 'mailto:#', label: 'Email' },
+    { Icon: Instagram, href: 'https://www.instagram.com/steph_.dev/', label: 'Instagram' },
+    { Icon: Mail, href: 'https://mail.google.com/mail/u/1/?ogbl#inbox?compose=new', label: 'Email' },
     { Icon: Linkedin, href: '#', label: 'LinkedIn' },
     { Icon: Phone, href: 'tel:#', label: 'Phone' },
     { Icon: MessageSquare, href: 'https://wa.me/#', label: 'WhatsApp' }, // Using MessageSquare for WhatsApp

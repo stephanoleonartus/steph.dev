@@ -20,7 +20,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
           onClick={() => setCurrentPage('home')}
           className="text-2xl font-bold text-blue-800 cursor-pointer focus:outline-none"
         >
-          Shedrack Siame
+          Stephs Dev
         </button>
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((item) => (
