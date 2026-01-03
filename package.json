@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://stephanoleonartus.github.io/shedrack_website_portfolio",
+  
   "dependencies": {
     "@react-three/drei": "^10.7.2",
     "@react-three/fiber": "^9.3.0",
