@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shedrack_website_portfolio/static/css/main.061dd289.css",
+    "main.js": "/shedrack_website_portfolio/static/js/main.0a15125f.js",
+    "static/js/453.4b56463e.chunk.js": "/shedrack_website_portfolio/static/js/453.4b56463e.chunk.js",
+    "index.html": "/shedrack_website_portfolio/index.html",
+    "main.061dd289.css.map": "/shedrack_website_portfolio/static/css/main.061dd289.css.map",
+    "main.0a15125f.js.map": "/shedrack_website_portfolio/static/js/main.0a15125f.js.map",
+    "453.4b56463e.chunk.js.map": "/shedrack_website_portfolio/static/js/453.4b56463e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.061dd289.css",
+    "static/js/main.0a15125f.js"
+  ]
+}
