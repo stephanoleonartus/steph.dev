@@ -65,6 +65,13 @@ const HomePage = ({ setCurrentPage }) => {
             {/* Skills boxes */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 rounded-xl border border-gray-700 hover:border-blue-800 transition-colors duration-300">
+                <Code className="text-blue-800 mb-4" size={32} />
+                <h3 className="text-black text-xl font-bold mb-2">Web Development</h3>
+                <p className="text-black">and</p>
+                <h3 className="text-black text-xl font-bold">Mobile Apps</h3>
+              </div>
+              
+              <div className="p-6 rounded-xl border border-gray-700 hover:border-blue-800 transition-colors duration-300">
                 <Brain className="text-blue-800 mb-4" size={32} />
                 <h3 className="text-black text-xl font-bold mb-2">Machine Learning</h3>
                 <p className="text-black">and</p>
