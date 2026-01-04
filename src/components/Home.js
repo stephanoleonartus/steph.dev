@@ -99,7 +99,7 @@ const HomePage = ({ setCurrentPage }) => {
         {/* About Section Preview */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <img src="/assets/Imageconcept.jpg" alt="About" className="rounded-xl" />
+            <img src={`${process.env.PUBLIC_URL}/assets/Imageconcept.jpg`} alt="About" className="rounded-xl" />
           </div>
           
           <div className="text-black">
